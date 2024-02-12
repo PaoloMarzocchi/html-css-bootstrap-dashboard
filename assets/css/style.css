@@ -1,4 +1,40 @@
+
+/* #region Debug */
+.debug{
+
+    #site_header{
+        height: 3rem;
+        background-color: aqua;
+    }
+
+    
+
+    #site_sidebar{
+        height: 100%;
+        width: 3rem;
+        background-color: blue;
+    }
+
+    #site_main{
+        height: 100%;
+        width: 100%;
+        background-color: blueviolet;
+        overflow: auto;
+    }
+}
+/* #endregion Debug */
+
+/* #region Common */
 body {
     font-family:'Roboto', sans-serif;
 }
+/* #endregion Common */
+
+/* #region Utilities */
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+/* #endregion Utilities */
 

@@ -1,13 +1,23 @@
+/* #region Color palette */
+:root{
+    --dash-primary: #1B72E8;
+    --dash-success: #198754;
+    --dash-alarm: #FFC107;
+    --dash-danger: #DC3545;
+    --dash-bell: #FF8F00;
+}
+/* #endregion Color palette */
+
 /* #region Debug */
 .debug {
-    & * {
+    /* & * {
         border: 1px dashed;
-    }
+    } */
 
-    #site_header {
+/*     #site_header {
         height: 3rem;
         background-color: aqua;
-    }
+    } */
 
 
 
@@ -84,4 +94,12 @@ body {
     overflow: hidden;
 } */
 
+.w_3{
+    width:3rem
+}
+
 /* #endregion Utilities */
+
+/* #region Header */
+
+/* #endregion Header */

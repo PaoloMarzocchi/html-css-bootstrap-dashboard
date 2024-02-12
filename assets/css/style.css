@@ -1,6 +1,9 @@
 
 /* #region Debug */
 .debug{
+    & *{
+        border: 1px dashed;
+    }
 
     #site_header{
         height: 3rem;
@@ -20,6 +23,21 @@
         width: 100%;
         background-color: blueviolet;
         overflow: auto;
+
+        .col-12{
+            height: 3rem;
+        }
+
+        .color3 {
+            background-color: chocolate;
+        }
+        .color1 {
+            background-color: rgb(171, 210, 30);
+        }
+        .color2 {
+            background-color: rgb(63, 30, 210);
+        }
+
     }
 }
 /* #endregion Debug */

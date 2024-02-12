@@ -6,6 +6,7 @@
     --dash-alarm: #FFC107;
     --dash-danger: #DC3545;
     --dash-bell: #FF8F00;
+    --dash-badge: #165BBA;
 }
 /* #endregion Color palette */
 
@@ -22,35 +23,35 @@
 
 
 
-    #site_sidebar {
+   /*  #site_sidebar { */
        /*  height: 100vh;
         flex-basis: 3rem; */
         /* background-color: blue; */
 
-        .square{
+        /* .square{
             height: 3rem;
             width: 2rem;
             background-color: crimson;
         }
-    }
+    } */
 
     #site_main {
         height: 100vh;
         width: 100%;
         padding-bottom:3.5rem;
-        background-color: blueviolet;
+        /* background-color: blueviolet; */
         overflow-y: auto;
 
         .banner {
 
 
-            .col {
+            /* .col {
                 height: 3rem;
-            }
+            } */
 
             .color3 {
-                background-color: chocolate;
-            }
+/*                 background-color: chocolate;
+ */            }
 
             .color1 {
                 background-color: rgb(171, 210, 30);
@@ -109,6 +110,8 @@ body {
 }
 /* #endregion Header */
 
+/* #region Main */
+
 /* #region Sidebar */
 #site_sidebar{
     height: 100vh;
@@ -123,3 +126,17 @@ body {
     }
 }
 /* #endregion Sidebar */
+
+/* #region Banner section */
+.banner{
+    background-color: var(--dash-primary);
+    color: white;
+
+    .badge{
+        background-color: var(--dash-badge);
+        
+    }
+}
+/* #endregion Banner section */
+
+/* #endregion Main */

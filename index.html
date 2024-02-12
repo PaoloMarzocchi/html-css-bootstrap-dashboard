@@ -18,8 +18,8 @@
     <!-- <div class="wrapper"> -->
         <header id="site_header">
             <nav class="navbar flex-nowrap navbar-expand-lg bg-body-tertiary">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#">
+                <div class="container-fluid p-0">
+                    <a class="navbar-brand ms-2" href="#">
                         <img src="./assets/img/mobile-logo.png" class="w_3 d-lg-none" alt="Logo">
                         <img src="./assets/img/logo.svg" class="d-none d-lg-block" alt="Logo">
                     </a>
@@ -76,9 +76,32 @@
                 </div>
             </div>
         </header>
+
         <div class="d-flex">
-            <div id="site_sidebar">
-                
+            <div id="site_sidebar" class="d-flex flex-column justify-content-between align-items-center">
+                <div class="tools d-flex flex-column justify-content-between align-items-center">
+                    <span class="d-flex flex-nowrap justify-content-between align-items-center">
+                        <i class="fa-solid fa-house py-2" style="color: #ffffff;"></i>
+                        <span class="d-none d-lg-inline p-2 fw-bold">Home</span>
+                    </span>
+                    <span class="d-flex flex-nowrap justify-content-between align-items-center">
+                        <i class="fa-solid fa-chart-simple py-2" style="color: #ffffff;"></i>
+                        <span class="d-none d-lg-inline p-2 fw-bold">Stats</span>
+                    </span>
+                    <span class="d-flex flex-nowrap justify-content-between align-items-center">
+                        <i class="fa-solid fa-signal py-2" style="color: #ffffff;"></i>
+                        <span class="d-none d-lg-inline p-2 fw-bold">Signal</span>
+                    </span>
+                    
+                    
+                </div>
+                <div class="settings">
+                    <span class="d-flex flex-nowrap justify-content-between align-items-center">
+                        <i class="fa-solid fa-gear" style="color: #ffffff;"></i>
+                        <span class="d-none d-lg-inline p-2 fw-bold">Admin</span>
+                    </span>
+                    
+                </div>
             </div>
             <main id="site_main">
 

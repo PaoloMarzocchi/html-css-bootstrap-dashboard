@@ -18,9 +18,9 @@
 
     <!-- Header -->
     <header id="site_header">
-        <nav class="navbar flex-nowrap navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid p-0">
-                <a class="navbar-brand ms-2" href="#">
+        <nav class="mw-100 navbar flex-nowrap navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand ms-1" href="#">
                     <img src="./assets/img/mobile-logo.png" class="w_3 d-lg-none" alt="Logo">
                     <img src="./assets/img/logo.svg" class="d-none d-lg-block" alt="Logo">
                 </a>
@@ -34,19 +34,10 @@
                 </form>
 
                 <ul class="navbar-nav flex-grow-0 collapse navbar-collapse mb-2 mb-lg-0" id="navbarSupportedContent">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">
                             <i class="fa-solid fa-list-ul"></i>
                         </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">
@@ -60,10 +51,24 @@
                     </li>
 
                 </ul>
-                <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop"
-                    aria-controls="staticBackdrop">
-                    <i class="fa-solid fa-bell" style="color:var(--dash-bell)"></i>
-                </button>
+
+                <div class="btn-group">
+                    <button type="button" class="btn" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-bell" style="color:var(--dash-bell)"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li>
+                            <button class="dropdown-item" type="button">Profilo</button>
+                        </li>
+                        <li>
+                            <button class="dropdown-item" type="button">Fatturazione</button>
+                        </li>
+                        <li>
+                            <button class="dropdown-item" type="button">Logout</button>
+                        </li>
+                    </ul>
+                </div>
+
             </div>
         </nav>
         <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
@@ -120,7 +125,10 @@
                     <div class="col color3 order-md-3">
                         <div class="d-flex align-items-center">
                             <span class="me-3">Nuovo studente</span>
-                            <a href="#" class="btn btn-outline-light">+</a>
+                            <button class="btn btn-outline-light" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+                                +
+                            </button>
                         </div>
                     </div>
                     <div class="col color3 order-md-1">
@@ -140,9 +148,9 @@
                     </div>
                 </div>
             </section>
-             <!-- /Banner Section -->
+            <!-- /Banner Section -->
 
-             <!-- Info classes Section -->
+            <!-- Info classes Section -->
             <section class="info_classes">
                 <div class="row row-cols-1 flex-column flex-md-row">
 
@@ -151,8 +159,8 @@
                         <div class="row flex-column">
                             <div class="col-12">
                                 <div class="card p-2">
-                                        <h3 class="border-bottom border-secondary-subtle py-2 fw-bold">Prossime classi</h3>
-                                        <table class="table align-middle table-hover">
+                                    <h3 class="border-bottom border-secondary-subtle py-2 fw-bold">Prossime classi</h3>
+                                    <table class="table align-middle table-hover">
                                         <thead>
                                             <tr>
                                                 <th>Nome</th>
@@ -165,7 +173,8 @@
                                         <tbody>
                                             <tr>
                                                 <td>
-                                                    <img src="./assets/img/class-avatar.jpg" class="me-2" style="width: 2rem;" alt="">
+                                                    <img src="./assets/img/class-avatar.jpg" class="me-2"
+                                                        style="width: 2rem;" alt="">
                                                     Classe 75
                                                 </td>
                                                 <td class="d-none d-md-table-cell">
@@ -188,7 +197,8 @@
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    <img src="./assets/img/class-avatar.jpg" class="me-2" style="width: 2rem;" alt="">
+                                                    <img src="./assets/img/class-avatar.jpg" class="me-2"
+                                                        style="width: 2rem;" alt="">
                                                     Classe 76
                                                 </td>
                                                 <td class="d-none d-md-table-cell">
@@ -211,7 +221,8 @@
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    <img src="./assets/img/class-avatar.jpg" class="me-2" style="width: 2rem;" alt="">
+                                                    <img src="./assets/img/class-avatar.jpg" class="me-2"
+                                                        style="width: 2rem;" alt="">
                                                     Classe 77
                                                 </td>
                                                 <td class="d-none d-md-table-cell">
@@ -221,7 +232,8 @@
                                                     20%
                                                 </td>
                                                 <td>
-                                                    <span class="badge rounded-pill text-bg-warning text-light">process</span>
+                                                    <span
+                                                        class="badge rounded-pill text-bg-warning text-light">process</span>
                                                 </td>
                                                 <td>
                                                     <a href="#" class="btn btn-outline-dark">
@@ -234,7 +246,8 @@
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    <img src="./assets/img/class-avatar.jpg" class="me-2" style="width: 2rem;" alt="">
+                                                    <img src="./assets/img/class-avatar.jpg" class="me-2"
+                                                        style="width: 2rem;" alt="">
                                                     Classe 78
                                                 </td>
                                                 <td class="d-none d-md-table-cell">
@@ -257,7 +270,8 @@
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    <img src="./assets/img/class-avatar.jpg" class="me-2" style="width: 2rem;" alt="">
+                                                    <img src="./assets/img/class-avatar.jpg" class="me-2"
+                                                        style="width: 2rem;" alt="">
                                                     Classe 79
                                                 </td>
                                                 <td class="d-none d-md-table-cell">
@@ -280,7 +294,8 @@
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    <img src="./assets/img/class-avatar.jpg" class="me-2" style="width: 2rem;" alt="">
+                                                    <img src="./assets/img/class-avatar.jpg" class="me-2"
+                                                        style="width: 2rem;" alt="">
                                                     Classe 80
                                                 </td>
                                                 <td class="d-none d-md-table-cell">
@@ -303,7 +318,8 @@
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    <img src="./assets/img/class-avatar.jpg" class="me-2" style="width: 2rem;" alt="">
+                                                    <img src="./assets/img/class-avatar.jpg" class="me-2"
+                                                        style="width: 2rem;" alt="">
                                                     Classe 81
                                                 </td>
                                                 <td class="d-none d-md-table-cell">
@@ -326,7 +342,8 @@
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    <img src="./assets/img/class-avatar.jpg" class="me-2" style="width: 2rem;" alt="">
+                                                    <img src="./assets/img/class-avatar.jpg" class="me-2"
+                                                        style="width: 2rem;" alt="">
                                                     Classe 82
                                                 </td>
                                                 <td class="d-none d-md-table-cell">
@@ -352,45 +369,55 @@
                                     </table>
                                 </div>
                                 <div class="card p-2">
-                                    <h3 class="border-bottom border-secondary-subtle py-2 fw-bold text-uppercase">f.a.q.</h3>
+                                    <h3 class="border-bottom border-secondary-subtle py-2 fw-bold text-uppercase">f.a.q.
+                                    </h3>
                                     <div class="accordion accordion-flush" id="accordionFlushExample">
                                         <div class="accordion-item">
-                                          <h2 class="accordion-header">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                                              Come aggiungere un nuovo studente?
-                                            </button>
-                                          </h2>
-                                          <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                            <div class="accordion-body">
-                                                Clicca sull' icona + "nuovo studente"
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                                    aria-expanded="false" aria-controls="flush-collapseOne">
+                                                    Come aggiungere un nuovo studente?
+                                                </button>
+                                            </h2>
+                                            <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                                data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body">
+                                                    Clicca sull' icona + "nuovo studente"
+                                                </div>
                                             </div>
-                                          </div>
                                         </div>
                                         <div class="accordion-item">
-                                          <h2 class="accordion-header">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                                              Come posso accedere alle informazioni del mio account?
-                                            </button>
-                                          </h2>
-                                          <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                            <div class="accordion-body">
-                                                Clicca sulla campanella in alto a sinistra nel Menu
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+                                                    aria-expanded="false" aria-controls="flush-collapseTwo">
+                                                    Come posso accedere alle informazioni del mio account?
+                                                </button>
+                                            </h2>
+                                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                                data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body">
+                                                    Clicca sulla campanella in alto a sinistra nel Menu
+                                                </div>
                                             </div>
-                                          </div>
                                         </div>
                                         <div class="accordion-item">
-                                          <h2 class="accordion-header">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                                              Posso usare questa dashboard da mobile?
-                                            </button>
-                                          </h2>
-                                          <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                            <div class="accordion-body">
-                                                Ovviamente sì
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+                                                    aria-expanded="false" aria-controls="flush-collapseThree">
+                                                    Posso usare questa dashboard da mobile?
+                                                </button>
+                                            </h2>
+                                            <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                                data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body">
+                                                    Ovviamente sì
+                                                </div>
                                             </div>
-                                          </div>
                                         </div>
-                                      </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>

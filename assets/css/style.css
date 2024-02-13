@@ -23,7 +23,7 @@ body {
 /* #endregion Common */
 
 /* #region Utilities */
-.wrapper {
+#wrapper {
     width: 100%;
     height: calc(100vh - 3.5rem);
     overflow: hidden;
@@ -49,13 +49,28 @@ body {
 /* #region Sidebar */
 #site_sidebar {
     height: 100%;
-    padding: 1rem 1.5rem;
+    width: 5.5rem;
+    padding: 1rem 1rem;
     z-index: 999;
     background-image: url(../img/sidebar-bg.png);
     background-color: var(--dash-secondary);
 
     & span {
         color: white;
+    }
+
+
+    a:hover {
+        background-color: rgba(255, 255, 255, 0.226);
+    }
+}
+
+@media screen and(max-width:1199px) {
+    #wrapper {
+        #site_sidebar {
+            width: 3.5rem;
+        }
+
     }
 }
 
@@ -79,7 +94,7 @@ body {
     }
 
 
-    
+
 
     /* #endregion Banner section */
     .info_classes {
@@ -94,7 +109,8 @@ body {
 @media screen and (min-width:1200px) {
 
     #site_main>.banner>div.offcanvas.offcanvas-end.w-100.w_30.p-3 {
-        width: 600px!important;
+        width: 600px !important;
     }
 }
+
 /* #endregion Main */

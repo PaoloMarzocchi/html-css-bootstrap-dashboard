@@ -77,14 +77,24 @@ body {
 
         }
     }
+
+
+    
+
     /* #endregion Banner section */
-    .info_classes{
+    .info_classes {
         background-color: var(--dash-lighter);
 
-        & h4{
+        & h4 {
             background-color: var(--dash-light);
         }
     }
 }
 
+@media screen and (min-width:1200px) {
+
+    #site_main>.banner>div.offcanvas.offcanvas-end.w-100.w_30.p-3 {
+        width: 600px!important;
+    }
+}
 /* #endregion Main */

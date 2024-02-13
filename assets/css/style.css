@@ -77,8 +77,14 @@ body {
 
         }
     }
-
     /* #endregion Banner section */
+    .info_classes{
+        background-color: var(--dash-lighter);
+
+        & h4{
+            background-color: var(--dash-light);
+        }
+    }
 }
 
 /* #endregion Main */
